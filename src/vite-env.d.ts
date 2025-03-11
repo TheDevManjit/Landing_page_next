@@ -1,3 +1,6 @@
 /// <reference types="vite/client" />
 SERVICE_ID=service_d47lf22
 TEMPLET_ID=template_u8y2q9n
+REACT_APP_EMAILJS_SERVICE_ID=service_d47lf22
+REACT_APP_EMAILJS_TEMPLATE_ID=template_u8y2q9n
+REACT_APP_EMAILJS_PUBLIC_KEY=Lk7eOIeOUuFIgQ7kH

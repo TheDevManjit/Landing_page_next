@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Send, } from 'lucide-react';
+import { X, Send } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
 export default function EnquiryPopup() {
@@ -8,8 +8,8 @@ export default function EnquiryPopup() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '', // Added phone field
     message: '',
-    Phone: ''
   });
 
   useEffect(() => {
@@ -21,18 +21,25 @@ export default function EnquiryPopup() {
     e.preventDefault();
     try {
       await emailjs.send(
-        'service_d47lf22',
-        'template_u8y2q9n',
-        formData,
-        'Lk7eOIeOUuFIgQ7kH'
+        'service_d47lf22', // Your Service ID
+        'template_2hdfcgf', // Your Template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+        },
+        'Lk7eOIeOUuFIgQ7kH' // Your Public Key
       );
       alert('Message sent successfully!');
+      setFormData({ name: '', email: '', phone: '', message: '' }); // Reset form
       setIsOpen(false);
     } catch (error) {
       console.error('Error sending message:', error);
       alert('Failed to send message. Please try again.');
     }
   };
+  
 
   return (
     <AnimatePresence>
@@ -72,6 +79,16 @@ export default function EnquiryPopup() {
                   className="w-full px-4 py-2 bg-gray-800 rounded-lg border border-gray-700 text-white"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="tel"
+                  placeholder="Your Phone Number"
+                  className="w-full px-4 py-2 bg-gray-800 rounded-lg border border-gray-700 text-white"
+                  value={formData.phone}
+                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   required
                 />
               </div>

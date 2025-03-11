@@ -7,26 +7,26 @@ const teamMembers = [
     name: "Manjit Kumar",
     role: "CEO & Founder",
     bio: "FullSatck Developer with a passion for education technology",
-    image: "images/manjit.png"
+    image: "public/images/manjit.png"
   },
   {
     name: "Vipin Singh",
     role: "Co-Founder & CTO",
     bio: "Android Deleoper with 5 years of experience",
-    image: "images/vipin.png"
+    image: "public/images/vipin.png"
    
   },
   {
     name: "Kameshwar kumar",
     role: "Graphic Designer",
     bio: "Graphic Designer with 5 years of experience",
-    image: "images/kameshwar.png"
+    image: "public/images/kameshwar.png"
   },
   {
     name: "Rohit Kumar",
     role: "Teachnical Head",
     bio: "Fullsatck Developer with 5 years of experience",
-    image: "images/rohit.png"
+    image: "public/images/rohit.png"
   }
 ];
 

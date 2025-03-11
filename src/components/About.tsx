@@ -7,25 +7,26 @@ const teamMembers = [
     name: "Manjit Kumar",
     role: "CEO & Founder",
     bio: "FullSatck Developer with a passion for education technology",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200&h=200"
+    image: "images/manjit.png"
   },
   {
-    name: "Marcus Rodriguez",
-    role: "Head of Innovation",
-    bio: "AI specialist focused on personalized learning algorithms",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200&h=200"
+    name: "Vipin Singh",
+    role: "Co-Founder & CTO",
+    bio: "Android Deleoper with 5 years of experience",
+    image: "images/vipin.png"
+   
   },
   {
-    name: "Priya Patel",
-    role: "Educational Director",
-    bio: "Former principal with expertise in curriculum development",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200&h=200"
+    name: "Kameshwar kumar",
+    role: "Graphic Designer",
+    bio: "Graphic Designer with 5 years of experience",
+    image: "images/kameshwar.png"
   },
   {
-    name: "Priya Patel",
-    role: "Educational Director",
-    bio: "Former principal with expertise in curriculum development",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200&h=200"
+    name: "Rohit Kumar",
+    role: "Teachnical Head",
+    bio: "Fullsatck Developer with 5 years of experience",
+    image: "images/rohit.png"
   }
 ];
 
@@ -66,12 +67,14 @@ export default function About() {
           <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
             About TEACHMARK
           </h2>
-          <p className="text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            TEACHMARK is revolutionizing education through cutting-edge technology and innovative learning solutions. Founded in 2023, we've quickly become a leading force in educational technology, combining AI-driven insights with proven pedagogical methods to create transformative learning experiences.
+          <p className="text-gray-300 max-w-3xl mx-auto leading-relaxed text-left">
+            TEACHMARK is transforming digital marketing with cutting-edge technology and data-driven strategies. Founded in 2023, we’ve quickly become a leading force in AI-powered marketing, helping businesses maximize engagement, boost brand visibility, and drive measurable growth.
+
+            Our expertise lies in leveraging AI-driven insights, automation, and advanced analytics to craft personalized marketing campaigns that deliver real impact. From targeted advertising and SEO to social media management and conversion optimization, we empower brands to stay ahead in the ever-evolving digital landscape. At TEACHMARK, we don’t just market—we create meaningful connections that drive long-term success.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-[20rem] mb-20">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -80,8 +83,7 @@ export default function About() {
           >
             <h3 className="text-2xl font-semibold mb-4 text-white">Our Mission</h3>
             <p className="text-gray-300 leading-relaxed">
-              To empower educational institutions with innovative technology solutions that enhance learning outcomes and create engaging, personalized educational experiences for students worldwide.
-            </p>
+              To empower businesses with innovative marketing solutions that drive engagement, boost brand visibility, and maximize growth through data-driven strategies and AI-powered automation.            </p>
           </motion.div>
 
           <motion.div
@@ -92,10 +94,7 @@ export default function About() {
           >
             <h3 className="text-2xl font-semibold mb-4 text-white">Core Values</h3>
             <ul className="text-gray-300 space-y-2">
-              <li>• Innovation in Education</li>
-              <li>• Student-Centered Approach</li>
-              <li>• Data-Driven Excellence</li>
-              <li>• Continuous Improvement</li>
+              <li>• Innovation in Marketing</li> <li>• Customer-Centric Strategies</li> <li>• Data-Driven Growth</li> <li>• Continuous Optimization</li>
             </ul>
           </motion.div>
         </div>

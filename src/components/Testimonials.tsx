@@ -4,22 +4,22 @@ import { Star } from 'lucide-react';
 
 const testimonials = [
   {
-    name: "Dr. James Wilson",
-    role: "Principal, Wilson Academy",
+    name: "Yash Gupta",
+    role: "Directore, Yash Coaching Institute",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200",
     quote: "TEACHMARK has revolutionized how we deliver education. Our student engagement has increased by 60% since implementing their solutions.",
     rating: 5
   },
   {
-    name: "Prof. Emily Chang",
-    role: "Department Head, Tech University",
+    name: "Ragini Sharma",
+    role: "Principal, Bright Minds School",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200&h=200",
     quote: "The AI-powered tutoring system has significantly improved our students' performance. It's like having a personal tutor for each student.",
     rating: 5
   },
   {
-    name: "Michael Roberts",
-    role: "Director, Future School",
+    name: "Sanjay Kumar",
+    role: "Bright Coaching Institute",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200&h=200",
     quote: "The virtual classroom solution made our transition to hybrid learning seamless. The support team is exceptional.",
     rating: 5

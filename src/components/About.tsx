@@ -6,29 +6,29 @@ const teamMembers = [
   {
     name: "Manjit Kumar",
     role: "CEO & Founder",
-    bio: "FullSatck Developer with a passion for education technology",
-    image: "public/images/manjit.png"
+    bio: "FullStack Developer with a passion for education technology",
+    image: "/images/manjit.png"  // ✅ Correct path
   },
   {
     name: "Vipin Singh",
     role: "Co-Founder & CTO",
-    bio: "Android Deleoper with 5 years of experience",
-    image: "public/images/vipin.png"
-   
+    bio: "Android Developer with 5 years of experience",
+    image: "/images/vipin.png"  // ✅ Correct path
   },
   {
-    name: "Kameshwar kumar",
+    name: "Kameshwar Kumar",
     role: "Graphic Designer",
     bio: "Graphic Designer with 5 years of experience",
-    image: "public/images/kameshwar.png"
+    image: "/images/kameshwar.png"  // ✅ Correct path
   },
   {
     name: "Rohit Kumar",
-    role: "Teachnical Head",
-    bio: "Fullsatck Developer with 5 years of experience",
-    image: "public/images/rohit.png"
+    role: "Technical Head",
+    bio: "FullStack Developer with 5 years of experience",
+    image: "/images/rohit.png"  // ✅ Fixed path (added "/")
   }
 ];
+
 
 const achievements = [
   {
